@@ -78,7 +78,6 @@ plugins=(
   brew common-aliases docker docker-compose git macos
   fzf
   golang
-  zsh-completions
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
