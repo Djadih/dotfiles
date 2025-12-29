@@ -78,6 +78,8 @@ plugins=(
   brew common-aliases docker docker-compose git macos
   fzf
   golang
+  gcloud
+  zsh-completions
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
@@ -101,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
 
+##------ begin alias ------
 # Set personal aliases, overriding those provided by Oh My Zsh libs,
 # plugins, and themes. Aliases can be placed here, though Oh My Zsh
 # users are encouraged to define aliases within a top-level file in
@@ -112,13 +115,36 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+## programs
 alias top=bpytop
 alias htop=bpytop
 alias cur="cursor ."
+
+## tmux
 alias tls="tmux ls"
-alias src="source ~/.zshrc"
+alias ta="tmux attach"
+
+## git/tig
+alias tst="tig status"
+alias tlo="tig log"
+alias gswm="git switch main"
+
+## go
+alias gm="go mod vendor && go mod tidy"
+alias gt="go mod tidy"
+alias mk="make build"
+alias ml="make build && make lint"
+
+## misc utils
 alias brup="brew update && brew upgrade && brew cleanup"
+alias src="source ~/.zshrc"
+
+##------ end alias ------
+
+## Bash to beginning
 
 ## SSH add to keychain
 # ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 
+Export CGO_ENABLED=1
