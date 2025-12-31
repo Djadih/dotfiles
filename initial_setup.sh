@@ -17,6 +17,6 @@ sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication no/' /etc/ssh
 RUNZSH=no KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 sudo chsh -s "$(command -v zsh)" "$USER"
 
-git clone https://github.com/Djadih/dotfiles.git ~/dotfiles && cd ~/dotfiles && cp -rf .[^.]* ~/
+git clone https://github.com/Djadih/dotfiles.git ~/dotfiles && cd ~/dotfiles && find . -maxdepth 1 -type f -name '.*' -exec cp -f {} ~ \;
 
 sudo reboot
