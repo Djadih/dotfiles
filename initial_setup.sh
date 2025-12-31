@@ -7,3 +7,4 @@ RUNZSH=no KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/o
 
 git clone https://github.com/Djadih/dotfiles.git ~/dotfiles && cd ~/dotfiles && cp -rf .[^.]* ~/
 
+sudo reboot
