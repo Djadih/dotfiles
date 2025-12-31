@@ -3,6 +3,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y \
   zsh \
   git \
+  tig \
   tmux \
   vim \
   ssh \
