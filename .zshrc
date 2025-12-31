@@ -79,7 +79,6 @@ plugins=(
   fzf
   golang
   gcloud
-  zsh-completions
   zsh-autosuggestions
   zsh-syntax-highlighting
 )
@@ -147,4 +146,4 @@ alias src="source ~/.zshrc"
 ## SSH add to keychain
 # ssh-add --apple-use-keychain ~/.ssh/id_ed25519
 
-Export CGO_ENABLED=1
+export CGO_ENABLED=1

@@ -10,8 +10,7 @@ sudo apt install -y \
   magic-wormhole \
   fzf \
   zsh-autosuggestions \
-  zsh-syntax-highlighting \
-  zsh-completions
+  zsh-syntax-highlighting
 
 sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication no/' /etc/ssh/sshd_config && sudo systemctl restart sshd
 
