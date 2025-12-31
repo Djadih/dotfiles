@@ -79,9 +79,10 @@ plugins=(
   fzf
   golang
   gcloud
-  zsh-autosuggestions
-  zsh-syntax-highlighting
 )
+# These must be sourced manually as they're installed via apt
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source $ZSH/oh-my-zsh.sh
 
